@@ -1,0 +1,783 @@
+/*----- IMPORT FONTS - SOURCE: https://font.google.com -----*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  /*background-color: black;*/
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background:hsl( 8, 98%, 48% );
+  color: #fff;
+}
+
+
+/*-------- START STYLING HOME PAGE ---------*/
+.l-home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.navbar-brand {
+  width: 60px;
+  /*height: 70px;*/
+}
+
+.navbar-brand > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navbar-nav > .nav-item > .nav-link {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.z-index-100 {
+  z-index: 100 !important;
+}
+
+.navbar-nav > .nav-item {
+  margin-left: 1.5rem;
+}
+
+.l-home > .hero-banner-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner-area:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: rgb(0,0,0,0.54);
+}
+
+/*--- START STYLING BANNER CONTENT ---*/
+.banner-content-wrapper {
+  width: 100%;
+  padding: 1rem;
+}
+
+.banner-content-wrapper > .banner-content-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 500;
+  font-size: 65px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: .5rem;
+}
+
+.banner-content-wrapper > .banner-content-para {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: .5rem;
+} 
+
+.banner-request-btn {
+  padding: 4px 15px;
+  outline: none;
+  border: none;
+  border-radius: 24px;
+  /*border: 3px solid #fff;*/
+  background: hsl( 8, 98%, 48% );
+  z-index: 1000;
+}
+
+.banner-request-btn > a {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.hero-banner-area > svg {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+}
+
+/*---- START STYLING ABOUT US SECTION ------*/
+.about_us {
+  width: 100%;
+  min-height: 100vh;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+
+.about_us > .aboutus-title {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.team-label {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: hsl(  184, 6%, 62%  );
+  text-align: center;
+  margin: 2.5rem auto;
+}
+
+.profile-block-wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  /*background: hsl( 208, 84%, 54% );*/
+}
+
+.profile-block-wrapper > .profile-head {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.profile-head > .profile-avatar-wrapper {
+  width: 95px;
+  height: 95px;
+}
+
+.profile-avatar-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100% !important;
+}
+
+.profile-block-wrapper > .profile-body {
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+.profile-body > .profile-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.profile-body > .profile-specialist {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.profile-block-wrapper > .profile-tail {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.profile-tail > .social-media-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.social-media-wrapper > a > .bx {
+  font-size: 22px;
+  padding-right: 1rem;
+  color: #000;
+}
+
+/*--- START STYLING OUR SERVICES  AREA  ---*/
+.our_services_label {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: hsl(  184, 6%, 62%  );
+  text-align: center;
+  margin: 2.5rem auto;
+}
+
+.our-services-content-area {
+  width: 75%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.service-block-wrapper {
+  padding: .3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.service-block-wrapper > .service-icon-wrapper {
+  width: 35%;
+  height: 35%;
+}
+
+.service-icon-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /*border-radius: 100%;*/
+}
+
+.service-block-wrapper > .service-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+}
+
+/*---- START STYLING OUR PROCESS AREA -----*/
+.our_process_label {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: hsl(  184, 6%, 62%  );
+  text-align: center;
+  margin: 2.5rem auto;
+}
+
+.our-process-content {
+  width: 75%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.our-process-para {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.block-img-wrapper {
+  width: 90%;
+  height: 90%;
+}
+
+.block-img-wrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.block-content-wrapper {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.block-content-wrapper > .block-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.block-content-wrapper > .block-para {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/*---- START STYLING CONTACT FORM AREA -----*/
+.contact_area_label {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: hsl(  184, 6%, 62%  );
+  text-align: center;
+  margin: 2.5rem auto;
+}
+
+.contact-form-wrapper {
+  width: 100%;
+  padding: 0.7rem;
+}
+
+.contact-form-wrapper > .form-label {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 500;
+  font-size: 37px;
+  text-transform: uppercase;
+  color: #d31b00;
+  margin-bottom: 0.8rem;
+}
+
+ input[type="text"], input[type="email"],
+input[type="phone"] {
+  padding: 10px;
+  outline: none;
+  border-radius: 24px;
+  padding-left: 1.2rem;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.form-message-input {
+  padding: 10px;
+  border-radius: 24px;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.contact-form-btn {
+  padding: 10px 45px;
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  background:hsl( 8, 98%, 48% );
+  color: #fff;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.form-label-contact {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 500;
+  font-size: 37px;
+  text-transform: uppercase;
+  color: #d31b00;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.mega_contact_info_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3.5rem;
+}
+
+.mega-contact-info-block {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.mega-contact-info-block > .contact-icon-wrapper {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:hsl( 8, 98%, 48% );
+  border-radius: 100%;
+  /*margin-right: 1.5rem;*/
+}
+
+.contact-icon-wrapper > .bx{
+  font-size: 22px;
+  color: #fff;
+}
+
+.contact-fb-label, .contact-linkedin-label, .contact-call-label, .contact-email-label {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/*----- START STYLING OUR WORKS SECTION ------*/
+.ourworks-title {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: hsl(  184, 6%, 62%  );
+  text-align: center;
+  margin: 2.5rem auto;
+}
+
+
+
+/*---- END STYLING ABOUT US SECTION ------*/
+/*---- START STYLING FOOTER SECTION ------*/
+.mega_footer {
+  width: 100%;
+  height: 10vh;
+  background: #000;
+  text-align: center;
+}
+
+.mega_footer > .footer_spliter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mega_copy_right {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.mega_logo_footer {
+  width: 35px;
+  height: 35px;
+}
+
+.mega_logo_footer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*---- END STYLING FOOTER SECTION ------*/
+
+/*.topnav {
+  overflow: hidden;
+ position: sticky;
+ top: 0;
+ padding: 50px 100px;
+
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bolder
+  
+}
+.topnav img{
+  float: left;
+}
+.topnav a:hover {
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.head{
+   height: 585px;
+  background-color: rgba(0, 0, 0, 0.6);
+}*/
+.content{
+  margin-top: 80px;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  font-family: fantasy;
+}
+.myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1;
+}
+
+
+.about_us{
+  
+  /*background-color: black;*/
+  padding:10px 0px;
+}
+.about_tiile{
+text-align: center;
+color: white;
+}
+/*.about_con{
+  background-color: black;
+  border-radius: 30px;
+  padding: 10px;
+  color: white;
+}*/
+/*.team_mem{
+  
+  border-radius: 20px;
+  
+  text-align: center;
+}*/
+.team_mem div{
+  padding-top: 10px;
+  display: inline-block;
+  width: 190px;
+  height: 280px;
+  margin: 2px;
+  /*background-color: black;*/
+  border:2px solid white ;
+}
+/*.team_mem div img{
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border:2px solid white ;
+}*/
+/*.our_service{
+ color: white;
+  border-radius: 20px;
+  padding: 20px 0;
+  text-align: center;
+}*/
+/*.our_service div{
+  display: inline-block;
+  width: 200px;
+  height: 220px;
+  background-color: black;
+  border:2px solid white ;
+  color: white;
+  border-radius: 30px;
+  padding-top: 10px;
+  margin: 10px;
+}*/
+.info{
+  margin: auto;
+  width: 1000px;
+ 
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/*.our_process{
+  text-align: center;
+  padding: 20px 50px;
+  border-radius: 20px;
+  padding-left: 150px;
+}*/
+.our_process h2{
+  width: 200px;
+  margin: auto;
+  padding: 0;
+  margin-bottom: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.our_process img{
+  float: left;
+  margin: 10px;
+}
+/*.our_process div{
+  width: 1000px;
+  height: 170px;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: black;
+  border:2px solid white ;
+  color: white;
+margin-bottom: 5px;
+margin-top: 10px;
+}*/
+.our_process p{
+  padding: 0;
+  margin: 0;
+  text-align: justify;
+}
+.our_process h3{
+  padding-top: 0px;
+  margin: 15px;
+  margin-left: 0;
+text-align: left;
+}
+
+/*.contact_us{
+  
+  height: 600px;
+  margin: auto;
+  border-radius: 30px;
+  text-align: center;
+  padding:20px 50px;
+  background-color: black;
+}*/
+
+.cc{
+  float: left;
+  width: 100%;
+  height: 500px;
+  /*background-color: black;*/
+  border-top: 2px  solid white;
+  border-bottom: 2px  solid white;
+  padding-top: 5px;
+  }
+.contact{
+  float: left;
+  /*background-color: black;*/
+  color: white;
+  width: 60%;
+  height: 490px;
+  
+}
+.contact img{
+  background-color: white;
+  float: left;
+  margin-left: 20px;
+}
+
+.request{
+  float: left;
+  width: 39%;
+  height: 490px;
+  /*background-color: black;*/
+
+
+}
+.request h2{
+  margin-bottom: 70px;
+}
+.request input{
+margin: 7px 0;
+width: 90%;
+height: 40px;
+border: 0;
+border-radius: 20px;
+background-color: white;
+padding-left: 20px;
+
+}
+
+.request textarea{
+  border: 0;
+  border-radius: 10px;
+  padding-left: 5px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+
+.request button{
+  width: 50%;
+  height: 50px;
+  border-radius: 20px;
+  /*background:black;*/
+  border: 2px solid white;
+  color: white;
+  font-size: x-large;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  margin-top: 10px;
+  
+}
+.our_works{
+  background-color: black;
+  padding:10px 50px;
+  color: white;
+  
+}
+.works_tiile{
+  text-align: center;
+  
+  }
+.projects{
+  /*background-color: black;*/
+  border-radius: 30px;
+  padding:20px 120px;
+  } 
+.projects div{
+  display: inline-block;
+  width: 300px;
+  height: 450px;
+  margin: 10px;
+  border-radius:50px 0;
+  /*background-color: black;*/
+  border:2px solid white ;
+  color: white;
+  align-content: center;
+}
+.projects div:hover{
+  border:2px solid rgb(123, 16, 230) ;
+  
+}
+footer{
+  background-color: black;
+  height: 60px;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  margin-top: 50px;
+}
+.up{
+  width: 70px;
+  height: 70px;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  background-color: white;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 20px;
+}
